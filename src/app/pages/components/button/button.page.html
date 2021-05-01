@@ -1,0 +1,127 @@
+<div id="root" [@initial]="animate" class="lz-col lz-col--gap">
+    <div class="lz-col-24 lz-col-tablet">
+        <h1>Buttons</h1>
+        <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+    
+        <section data-section="solids" data-name="Solids">
+            <h3>Solids</h3>
+            <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+    
+            <div class="lz-card">
+                <div class="lz-card-body">
+                    <button type="button" class="lz-btn lz-btn--brand">Solid</button>
+                    <button type="button" class="lz-btn lz-btn--contrast">Secondary</button>
+                    <button type="button" class="lz-btn lz-btn--red">Red</button>
+                    <button type="button" class="lz-btn lz-btn--green">Green</button>
+                    <button type="button" class="lz-btn lz-btn--yellow">Yellow</button>
+                    <button type="button" class="lz-btn lz-btn--blue">Blue</button>
+                </div>
+            </div>
+            <app-markup [html]="html.solid"></app-markup>
+        </section>
+    
+        <section data-section="outline">
+            <h3>Outline</h3>
+            <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+    
+            <div class="lz-card">
+                <div class="lz-card-body">
+                    <button type="button" class="lz-btn lz-btn--outline lz-btn--outline--brand">Solid</button>
+                    <button type="button" class="lz-btn lz-btn--outline lz-btn--outline--contrast">Secondary</button>
+                    <button type="button" class="lz-btn lz-btn--outline lz-btn--outline--red">Red</button>
+                    <button type="button" class="lz-btn lz-btn--outline lz-btn--outline--green">Green</button>
+                    <button type="button" class="lz-btn lz-btn--outline lz-btn--outline--yellow">Yellow</button>
+                    <button type="button" class="lz-btn lz-btn--outline lz-btn--outline--blue">Blue</button>
+                </div>
+            </div>
+            <app-markup [html]="html.outline"></app-markup>
+        </section>
+        
+        <section data-section="no-stroke" data-name="No Stroke">
+            <h3>No Stroke</h3>
+            <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+    
+            <div class="lz-card">
+                <div class="lz-card-body">
+                    <button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--brand">Solid</button>
+                    <button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--contrast">Secondary</button>
+                    <button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--red">Red</button>
+                    <button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--green">Green</button>
+                    <button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--yellow">Yellow</button>
+                    <button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--blue">Blue</button>
+                </div>
+            </div>
+            <app-markup [html]="html.noStroke"></app-markup>
+        </section>
+
+        <section data-section="state" data-name="State">
+            <h3>State</h3>
+            <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+    
+            <div class="lz-card">
+                <div class="lz-card-body">
+                    <button type="button" class="lz-btn lz-btn--disabled">Disabled</button>
+                    <button type="button" class="lz-btn lz-btn--outline lz-btn--disabled">Solid</button>
+                    <button type="button" class="lz-btn lz-btn--no-stroke lz-btn--disabled">Solid</button>
+                    <button type="button" class="lz-btn lz-btn--icon lz-btn--disabled">
+                        <i class="uil uil-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <app-markup [html]="html.state"></app-markup>
+        </section>
+
+        <section data-section="size" data-name="Size">
+            <h3>Size</h3>
+            <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+    
+            <div class="lz-card">
+                <div class="lz-card-body">
+                    <button type="button" class="lz-btn lz-btn--brand lz-btn--large">Solid</button>
+                    <button type="button" class="lz-btn lz-btn--contrast lz-btn--large">Secondary</button>
+                </div>
+            </div>
+            <app-markup [html]="html.size.large"></app-markup>
+
+            <div class="lz-card lz-margin-top">
+                <div class="lz-card-body">
+                    <button type="button" class="lz-btn lz-btn--brand lz-btn--small">Solid</button>
+                    <button type="button" class="lz-btn lz-btn--contrast lz-btn--small">Secondary</button>
+                </div>
+            </div>
+
+            <app-markup [html]="html.size.small"></app-markup>
+        </section>
+    
+        <section data-section="icon" data-name="Icon Button">
+            <h3>Icon button</h3>
+            <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+    
+            <div class="lz-card">
+                <div class="lz-card-body">
+                    <button type="button" class="lz-btn lz-btn--icon">
+                        <i class="uil uil-heart"></i>
+                    </button>
+                    <button type="button" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
+                        <i class="uil uil-heart"></i>
+                    </button>
+                    <button type="button" class="lz-btn lz-btn--no-stroke--brand lz-btn--icon lz-btn--icon--no-shadow">
+                        <i class="uil uil-heart"></i>
+                    </button>
+                    <button type="button" class="lz-btn lz-btn--contrast lz-btn--icon lz-btn--icon--no-shadow">
+                        <i class="uil uil-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <app-markup [html]="html.noStroke"></app-markup>
+        </section>
+    </div>
+
+    <div class="lz-col-8 lz-display-tablet">
+        <div class="sticky">
+            <dl>
+                <dt *ngFor="let index of indexes" (click)="scroll(index.el)">{{ index.name }}</dt>
+            </dl>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="lz-side-nav" [@listAnimation]="menu.length">
+    <div class="lz-side-nav-content">
+        <ng-container *ngFor="let button of menu">
+            <button class="lz-btn-side-nav" (click)="verify(button)" [routerLink]="button.url"
+                routerLinkActive="lz-btn-side-nav--active">
+                <i class="uil" [ngClass]="[button.icon]"></i>
+                {{ button.label }}
+            </button>
+            <ng-container *ngIf="button.children">
+                <div class="lz-side-nav-container">
+                    <ul class="lz-btn-side-nav-list" [@openClose]="button.open ? 'open' : 'closed'">
+                        <ng-container *ngFor="let children of button.children">
+                            <li class="lz-btn-side-nav-list-item" [routerLink]="children.url"
+                                routerLinkActive="lz-btn-side-nav-list-item--active">
+                                {{ children.label }}
+                            </li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>
