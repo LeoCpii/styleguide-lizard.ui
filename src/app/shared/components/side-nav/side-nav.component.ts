@@ -12,7 +12,7 @@ import { COLLAPSIBLE_ANIMATION } from '@/app/shared/animations/collpasible.anima
 })
 
 export class SideNavComponent implements OnInit {
-    public menu = MENU;
+    public menu = this.sortMenu;
     public isOpen = false;
 
     constructor(private router: Router) {
@@ -21,6 +21,12 @@ export class SideNavComponent implements OnInit {
 
     get state() {
         return this.isOpen ? 'open' : 'closed';
+    }
+
+    get sortMenu() {
+        MENU.sort((a, b) => a.label > b.label ? 1 : - 1)
+            .forEach(sub => sub.children.sort((a, b) => a.label > b.label ? 1 : - 1));
+        return MENU;
     }
 
     public active(url: string) {

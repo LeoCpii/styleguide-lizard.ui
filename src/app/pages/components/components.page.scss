@@ -1,0 +1,15 @@
+.sticky {
+    display: block;
+    position: sticky;
+    top: 15px;
+
+    dl {
+        border-left: 1px solid #d6d6d6;
+        cursor: pointer;
+
+        dt {
+            border-left: 2px solid #d6d6d6;
+            padding-left: 15px;
+        }
+    }
+}

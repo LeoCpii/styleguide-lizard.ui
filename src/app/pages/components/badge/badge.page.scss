@@ -1,0 +1,19 @@
+[data-section="button"] {
+    button {
+        margin-right: 10px;
+
+        &:last-child {
+            margin: 0px;
+        }
+    }
+}
+
+[data-section="colors"] {
+    span {
+        margin-right: 10px;
+
+        &:last-child {
+            margin: 0px;
+        }
+    }
+}

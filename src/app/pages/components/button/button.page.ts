@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
-import { BUTTON_NO_STROKE, BUTTON_OUTLINE, BUTTON_SOLID, BUTTON_SIZE, BUTTON_STATE } from './button.const';
+import { BUTTON_NO_STROKE, BUTTON_OUTLINE, BUTTON_SOLID, BUTTON_SIZE, BUTTON_STATE, BUTTON_ICON } from './button.const';
 
 interface IIndex {
   el: string;
@@ -22,22 +22,11 @@ export class ButtonPage implements OnInit {
     outline: BUTTON_OUTLINE,
     noStroke: BUTTON_NO_STROKE,
     size: BUTTON_SIZE,
-    state: BUTTON_STATE
+    state: BUTTON_STATE,
+    icon: BUTTON_ICON
   };
 
   constructor() { }
 
-  public scroll(el: string) {
-   const dom = document.getElementById('root');
-   dom.getAttribute('[data-section]');
-  }
-  ngOnInit() {
-    const section = document.getElementsByTagName('SECTION');
-    for (var i = 0; i < section.length; i++) {
-      this.indexes.push({
-        el: section[i]['dataset'].section,
-        name: section[i]['dataset'].name
-      })
-    }
-  }
+  ngOnInit() { }
 }

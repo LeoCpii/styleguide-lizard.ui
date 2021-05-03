@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "~10.1.5",
     "@angular/router": "~10.1.5",
     "balloon-css": "^1.2.0",
-    "lizard.ui": "C:/Users/Leonardo/Desktop/Projetos/my-church/lizard.ui",
+    "lizard.ui": "C:/Users/leonardo.melo/Desktop/Projetos/lizard.ui/lizard.ui",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

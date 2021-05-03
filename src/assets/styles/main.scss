@@ -1,6 +1,14 @@
 @import "~lizard.ui/dist/css/main";
 @import "~balloon-css/src/balloon";
 
+
+// CODE
 section {
     margin-top: 60px;
+}
+
+code {
+    font-size: .875em;
+    color: #d63384;
+    word-wrap: break-word;
 }

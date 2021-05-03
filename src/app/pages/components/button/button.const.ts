@@ -32,3 +32,16 @@ export const BUTTON_STATE = `<button type="button" class="lz-btn lz-btn--disable
 <button type="button" class="lz-btn lz-btn--icon lz-btn--disabled">
     <i class="uil uil-heart"></i>
 </button>`;
+
+export const BUTTON_ICON = `<button type="button" class="lz-btn lz-btn--icon">
+    <i class="uil uil-heart"></i>
+</button>
+<button type="button" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
+    <i class="uil uil-heart"></i>
+</button>
+<button type="button" class="lz-btn lz-btn--no-stroke--brand lz-btn--icon lz-btn--icon--no-shadow">
+    <i class="uil uil-heart"></i>
+</button>
+<button type="button" class="lz-btn lz-btn--contrast lz-btn--icon lz-btn--icon--no-shadow">
+    <i class="uil uil-heart"></i>
+</button>`
