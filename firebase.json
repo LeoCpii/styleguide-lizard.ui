@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/styleguide-lizard-ui",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+name: CI - PRD
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  deploy-PRD:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@master
+        with:
+          node-version: 10.x
+      - name: auth repository
+        run: git config --global url."https://${{ secrets.MC_GH_TOKEN }}@github.com/".insteadOf ssh://git@github.com/
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: 'npm run build:prod'
+      - uses: w9jds/firebase-action@master
+        with:
+          args: deploy --project=production --only hosting
+        env:
+          FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN_PRD }}'
+          GITHUB_TOKEN: ${{ secrets.MC_GH_TOKEN }}
