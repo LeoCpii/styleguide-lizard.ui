@@ -1,10 +1,17 @@
-<div class="container-pre">
-    <button (click)="copy()" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
-        <i class="uil" [ngClass]="cls"></i>
-    </button>
-    <pre>
-<code>
-{{ example }}
-</code>
-</pre>
+<div class="collapsible">
+    <app-collapsible>
+        <div header>
+            <span class="title">Ver mais</span>
+        </div>
+        <div content>
+            <div class="container-pre">
+                <div class="buttons">
+                    <button (click)="copy()" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
+                        <i class="uil" [ngClass]="cls"></i>
+                    </button>
+                </div>
+                <markdown [data]="html"></markdown>
+            </div>
+        </div>
+    </app-collapsible>
 </div>

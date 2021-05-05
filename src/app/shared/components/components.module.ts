@@ -9,19 +9,24 @@ import { MarkupComponent } from './markup/markup.component';
 
 // Modules
 import { RouterModule } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
+import { CollapsibleComponent } from './collapsible/collapsible.component';
 
 // Services
+import { CollapsibleService } from './collapsible/collapsible.service';
 
 const COMPONENTS = [
     SideNavComponent,
     NavComponent,
-    MarkupComponent
+    MarkupComponent,
+    CollapsibleComponent
 ];
 
-const PROVIDERS = [];
+const PROVIDERS = [CollapsibleService];
 
 @NgModule({
     imports: [
+        MarkdownModule.forChild(),
         FormsModule,
         ReactiveFormsModule,
         CommonModule,

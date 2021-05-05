@@ -1,14 +1,25 @@
 @import "~lizard.ui/dist/css/main";
 @import "~balloon-css/src/balloon";
 
-
 // CODE
 section {
     margin-top: 60px;
 }
 
 code {
-    font-size: .875em;
+    font-size: 0.875em;
     color: #d63384;
     word-wrap: break-word;
+}
+
+// NORMALIZE
+
+app-markup app-collapsible markdown pre {
+    background-color: transparent !important;
+    padding: 0px !important;
+    margin: 0px !important;
+
+    span {
+        font-family: inherit !important;
+    }
 }

@@ -3,6 +3,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutRoutingModule } from './layout-routing.module';
+import { MarkdownModule } from 'ngx-markdown'
 
 // PAGE
 import { LayoutPage } from './layout.page';
@@ -23,6 +24,7 @@ const PROVIDERS = [];
 
 @NgModule({
     imports: [
+        MarkdownModule.forChild(),
         LayoutRoutingModule,
         SharedModule,
         CommonModule,

@@ -29,6 +29,10 @@ export const MENU = [
             {
                 label: 'Badges',
                 url: '/components/badges'
+            },
+            {
+                label: 'Formulário',
+                url: '/components/form'
             }
         ]
     },

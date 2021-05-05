@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
-import { ALERT_COLORS } from './alert.const';
+import { ALERT_ACTION, ALERT_COLORS } from './alert.const';
 
 @Component({
   selector: 'app-alert-page',
@@ -12,7 +12,8 @@ import { ALERT_COLORS } from './alert.const';
 export class AlertPage implements OnInit {
   public animate = 'ready';
   public html = {
-    colors: ALERT_COLORS
+    colors: ALERT_COLORS,
+    action: ALERT_ACTION
   }
 
   constructor() { }

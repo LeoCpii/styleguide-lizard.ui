@@ -18,6 +18,14 @@ export class MarkupComponent {
     return [`uil-${this.state}`];
   }
 
+  get html() {
+    return `  
+    \`\`\`html
+    ${this.example}
+     \`\`\`
+    `;
+  }
+
   public copy(): void {
     this.state = 'check';
     const el = document.createElement('textarea');
