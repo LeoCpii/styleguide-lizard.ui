@@ -6,6 +6,7 @@ import { ComponentsPage } from './components.page';
 import { ButtonPage } from './button/button.page';
 import { AlertPage } from './alert/alert.page';
 import { BadgePage } from './badge/badge.page';
+import { FormPage } from './form/form.page';
 
 const PROVIDERS = [];
 
@@ -16,7 +17,7 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'button',
+                redirectTo: 'alerts',
                 pathMatch: 'full'
             },
             {
@@ -31,6 +32,10 @@ const routes: Routes = [
                 path: 'badges',
                 component: BadgePage,
             },
+            {
+                path: 'form',
+                component: FormPage
+            }
         ]
     }
 ];
