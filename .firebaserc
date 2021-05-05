@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "lizard-ui-styleguide"
+    "production": "lizard-ui-styleguide"
   }
 }
