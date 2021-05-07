@@ -1,23 +1,23 @@
-export const BUTTON_SOLID = `<button type="button" class="lz-btn lz-btn--solid">Solid</button>
+export const BUTTON_SOLID = `<button type="button" class="lz-btn lz-btn--brand">Brand</button>
 <button type="button" class="lz-btn lz-btn--contrast">Contrast</button>
 <button type="button" class="lz-btn lz-btn--red">red</button>
 <button type="button" class="lz-btn lz-btn--green">green</button>
 <button type="button" class="lz-btn lz-btn--yellow">yellow</button>
 <button type="button" class="lz-btn lz-btn--blue">blue</button>`;
 
-export const BUTTON_OUTLINE = `<button type="button" class="lz-btn lz-btn--outline lz-btn--outline--brand">Solid</button>
-<button type="button" class="lz-btn lz-btn--outline lz-btn--outline--contrast">Contrast</button>
-<button type="button" class="lz-btn lz-btn--outline lz-btn--outline--red">Red</button>
-<button type="button" class="lz-btn lz-btn--outline lz-btn--outline--green">Green</button>
-<button type="button" class="lz-btn lz-btn--outline lz-btn--outline--yellow">Yellow</button>
-<button type="button" class="lz-btn lz-btn--outline lz-btn--outline--blue">Blue</button>`;
+export const BUTTON_OUTLINE = `<button type="button" class="lz-btn lz-btn--brand lz-btn--brand--outline">Brand</button>
+<button type="button" class="lz-btn lz-btn--contrast lz-btn--contrast--outline">Contrast</button>
+<button type="button" class="lz-btn lz-btn--red lz-btn--red--outline">Red</button>
+<button type="button" class="lz-btn lz-btn--green lz-btn--green--outline">Green</button>
+<button type="button" class="lz-btn lz-btn--yellow lz-btn--yellow--outline">Yellow</button>
+<button type="button" class="lz-btn lz-btn--blue lz-btn--blue--outline">Blue</button>`;
 
-export const BUTTON_NO_STROKE = `<button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--brand">Solid</button>
-<button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--contrast">Contrast</button>
-<button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--red">Red</button>
-<button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--green">Green</button>
-<button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--yellow">Yellow</button>
-<button type="button" class="lz-btn lz-btn--no-stroke lz-btn--no-stroke--blue">Blue</button>`;
+export const BUTTON_NO_STROKE = `<button type="button" class="lz-btn lz-btn--brand lz-btn--brand--no-stroke">Brand</button>
+<button type="button" class="lz-btn lz-btn--contrast lz-btn--contrast--no-stroke">Contrast</button>
+<button type="button" class="lz-btn lz-btn--red lz-btn--red--no-stroke">Red</button>
+<button type="button" class="lz-btn lz-btn--green lz-btn--green--no-stroke">Green</button>
+<button type="button" class="lz-btn lz-btn--yellow lz-btn--yellow--no-stroke">Yellow</button>
+<button type="button" class="lz-btn lz-btn--blue lz-btn--blue--no-stroke">Blue</button>`;
 
 export const BUTTON_SIZE = {
     large: `<button type="button" class="lz-btn lz-btn--solid lz-btn--large">Solid</button>
