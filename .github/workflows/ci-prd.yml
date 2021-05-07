@@ -1,8 +1,8 @@
 name: CI - PRD
 'on':
   push:
-    branches:
-      - master
+    tags:
+      - "v*.*.*"
 jobs:
   deploy-PRD:
     runs-on: ubuntu-latest
