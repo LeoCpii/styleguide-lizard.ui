@@ -19,11 +19,11 @@ export const MENU = [
         open: false,
         children: [
             {
-                label: 'Botões',
+                label: 'Buttons',
                 url: '/components/button'
             },
             {
-                label: 'Alertas',
+                label: 'Alerts',
                 url: '/components/alerts'
             },
             {
@@ -31,9 +31,25 @@ export const MENU = [
                 url: '/components/badges'
             },
             {
-                label: 'Formulário',
+                label: 'Forms',
                 url: '/components/form'
-            }
+            },
+            {
+                label: 'Assign',
+                url: '/components/assign'
+            },
+            {
+                label: 'Breadcrumb',
+                url: '/components/breadcrumb'
+            },
+            {
+                label: 'Card',
+                url: '/components/card'
+            },
+            {
+                label: 'Collapsible',
+                url: '/components/collapsible'
+            },
         ]
     },
     {

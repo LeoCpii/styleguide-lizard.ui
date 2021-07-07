@@ -11,6 +11,10 @@ import { ButtonPage } from './button/button.page';
 import { AlertPage } from './alert/alert.page';
 import { BadgePage } from './badge/badge.page';
 import { FormPage } from './form/form.page';
+import { AssignPage } from './assign/assign.page';
+import { BreadcrumbPage } from './breadcrumb/breadcrumb.page';
+import { CardPage } from './card/card.page';
+import { CollapsiblePage } from './collapsible/collapsible.page';
 
 // FRAGMENT
 
@@ -21,7 +25,11 @@ const PAGES = [
     ButtonPage,
     AlertPage,
     BadgePage,
-    FormPage
+    FormPage,
+    AssignPage,
+    BreadcrumbPage,
+    CardPage,
+    CollapsiblePage
 ];
 
 const FRAGMENTS = [];

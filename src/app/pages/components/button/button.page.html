@@ -1,9 +1,9 @@
 <div id="root" [@initial]="animate">
-    <h1>Botões</h1>
+    <h1>Buttons</h1>
     <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few extras
         thrown in for more control.</p>
 
-    <section data-section="solids" data-name="Solids">
+    <section>
         <h3>Solids</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras thrown in for more control.</p>
@@ -21,7 +21,7 @@
         <app-markup [example]="html.solid"></app-markup>
     </section>
 
-    <section data-section="outline">
+    <section>
         <h3>Outline</h3>
         <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes
             with the <code>.lz-btn--outline-*</code> ones to remove all background images and colors on any button.</p>
@@ -39,7 +39,7 @@
         <app-markup [example]="html.outline"></app-markup>
     </section>
 
-    <section data-section="no-stroke" data-name="No Stroke">
+    <section>
         <h3>No Stroke</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras thrown in for more control.</p>
@@ -57,7 +57,7 @@
         <app-markup [example]="html.noStroke"></app-markup>
     </section>
 
-    <section data-section="state" data-name="State">
+    <section>
         <h3>State</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras thrown in for more control.</p>
@@ -85,7 +85,7 @@
         <app-markup [example]="html.state"></app-markup>
     </section>
 
-    <section data-section="size" data-name="Size">
+    <section>
         <h3>Size</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras
@@ -109,7 +109,7 @@
         <app-markup [example]="html.size.small"></app-markup>
     </section>
 
-    <section data-section="icon" data-name="Icon Button">
+    <section>
         <h3>Icon button</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras
@@ -117,17 +117,29 @@
 
         <div class="lz-card">
             <div class="lz-card-body">
-                <button type="button" class="lz-btn lz-btn--icon">
-                    <i class="uil uil-heart"></i>
-                </button>
                 <button type="button" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
-                    <i class="uil uil-heart"></i>
-                </button>
-                <button type="button" class="lz-btn lz-btn--no-stroke--brand lz-btn--icon lz-btn--icon--no-shadow">
                     <i class="uil uil-heart"></i>
                 </button>
                 <button type="button" class="lz-btn lz-btn--contrast lz-btn--icon lz-btn--icon--no-shadow">
                     <i class="uil uil-heart"></i>
+                </button>
+            </div>
+        </div>
+        <app-markup [example]="html.icon"></app-markup>
+
+        <div class="lz-card lz-margin-top">
+            <div class="lz-card-body">
+                <button type="button" class="lz-btn lz-btn--brand">
+                    <i class="uil uil-heart"></i>
+                    Solid with icon
+                </button>
+                <button type="button" class="lz-btn lz-btn--brand lz-btn--brand--outline">
+                    <i class="uil uil-heart"></i>
+                    Outline with icon
+                </button>
+                <button type="button" class="lz-btn lz-btn--brand lz-btn--brand--no-stroke">
+                    <i class="uil uil-heart"></i>
+                    No Stroke with icon
                 </button>
             </div>
         </div>

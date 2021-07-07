@@ -1,12 +1,21 @@
 <div class="lz-nav">
-    <div class="lz-content">
-        <div class="lz-content-left">
-            <!-- <app-svg svg="church" theme="light"></app-svg> -->
-            <div class="lz-name">
-                <h5>Lizard UI</h5>
+    <h6 class="lz-nav-content-left-badge">
+        <span class="lz-badge lz-badge--blue">v{{ version }}</span>
+    </h6>
+    <div class="lz-nav-content">
+        <div class="lz-nav-content-left">
+            <button (click)="toggleMenuMobile()"
+                class="lz-nav-content-left-button-menu lz-btn lz-btn--icon lz-btn--icon--no-shadow lz-btn--mr lz-display-small-tablet-show">
+                <i class="uil uil-bars"></i>
+            </button>
+            <div class="lz-nav-content-left-name">
+                <button class="lz-btn lz-btn--icon lz-btn--icon--no-shadow lz-display-small-tablet-hide lz-btn--mr">
+                    <i class="uil uil-store"></i>
+                </button>
+                <h4>Lizard UI</h4>
             </div>
         </div>
-        <div class="lz-content-right">
+        <div class="lz-nav-content-right">
             <button (click)="toggleTheme()" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow lz-btn--mr btn-style">
                 <i class="uil uil-brush-alt"></i>
             </button>
@@ -17,5 +26,20 @@
                 <i class="uil uil-twitter"></i>
             </button>
         </div>
+    </div>
+</div>
+
+<div (click)="toggleMenuMobile()" class="lz-menu-mobile-overlay" @animation *ngIf="isOpen">
+    <div class="lz-menu-mobile-close">
+        <app-button (click)="toggleMenuMobile()" icon="times" theme="default" [noStroke]="true"></app-button>
+    </div>
+    <div class="lz-menu-mobile-card-overlay">
+        <ng-container *ngFor="let button of menu">
+            <div class="lz-menu-mobile-card-overlay-item" [routerLink]="button.url"
+                routerLinkActive="lz-menu-mobile-card-overlay-item--active">
+                <i class="uil" [ngClass]="[button.icon]"></i>
+                {{ button.label }}
+            </div>
+        </ng-container>
     </div>
 </div>

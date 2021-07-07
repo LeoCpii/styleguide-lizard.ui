@@ -7,6 +7,10 @@ import { ButtonPage } from './button/button.page';
 import { AlertPage } from './alert/alert.page';
 import { BadgePage } from './badge/badge.page';
 import { FormPage } from './form/form.page';
+import { AssignPage } from './assign/assign.page';
+import { BreadcrumbPage } from './breadcrumb/breadcrumb.page';
+import { CardPage } from './card/card.page';
+import { CollapsiblePage } from './collapsible/collapsible.page';
 
 const PROVIDERS = [];
 
@@ -29,13 +33,33 @@ const routes: Routes = [
                 component: AlertPage,
             },
             {
+                path: 'assign',
+                component: AssignPage,
+            },
+            {
                 path: 'badges',
                 component: BadgePage,
             },
             {
                 path: 'form',
                 component: FormPage
-            }
+            },
+            {
+                path: 'breadcrumb',
+                component: BreadcrumbPage
+            },
+            {
+                path: 'card',
+                component: CardPage
+            },
+            {
+                path: 'collapsible',
+                component: CollapsiblePage
+            },
+            // {
+            //     path: 'collpasible',
+            //     component: CollapsiblePage
+            // }
         ]
     }
 ];

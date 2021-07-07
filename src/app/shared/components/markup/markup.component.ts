@@ -3,37 +3,37 @@ import { Component, Input } from '@angular/core';
 export type IValidTypes = 'standard' | 'currency' | 'cpf' | 'cnpj' | 'account' | 'percent';
 
 @Component({
-  selector: 'app-markup',
-  templateUrl: './markup.component.html',
-  styleUrls: ['./markup.component.scss'],
+    selector: 'app-markup',
+    templateUrl: './markup.component.html',
+    styleUrls: ['./markup.component.scss'],
 })
 export class MarkupComponent {
-  @Input() example: string;
-  
-  public state: 'copy' | 'check' = 'copy';
+    @Input() example: string;
 
-  constructor() { }
+    public state: 'copy' | 'check' = 'copy';
 
-  get cls(): string[] {
-    return [`uil-${this.state}`];
-  }
+    constructor() { }
 
-  get html() {
-    return `  
+    get cls(): string[] {
+        return [`uil-${this.state}`];
+    }
+
+    get html() {
+        return `  
     \`\`\`html
     ${this.example}
      \`\`\`
     `;
-  }
+    }
 
-  public copy(): void {
-    this.state = 'check';
-    const el = document.createElement('textarea');
-    el.value = this.example;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
-    setTimeout(() => this.state = 'copy', 800);
-  }
+    public copy(): void {
+        this.state = 'check';
+        const el = document.createElement('textarea');
+        el.value = this.example;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        setTimeout(() => this.state = 'copy', 800);
+    }
 }
