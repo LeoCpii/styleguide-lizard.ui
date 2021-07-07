@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { ComponentsModule } from './components/components.module';
 
 // Lib
-import Theme from 'lizard.ui';
+import Lizard from 'lizard.ui';
 
 // Service
 
@@ -14,7 +14,7 @@ import Theme from 'lizard.ui';
 
 const SERVICES = [];
 
-const LIBS = [Theme];
+const LIBS = [Lizard];
 
 const GUARDS = [];
 
