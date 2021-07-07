@@ -15,6 +15,7 @@ import { AssignPage } from './assign/assign.page';
 import { BreadcrumbPage } from './breadcrumb/breadcrumb.page';
 import { CardPage } from './card/card.page';
 import { CollapsiblePage } from './collapsible/collapsible.page';
+import { DropdownPage } from './dropdown/dropdown.page';
 
 // FRAGMENT
 
@@ -29,7 +30,8 @@ const PAGES = [
     AssignPage,
     BreadcrumbPage,
     CardPage,
-    CollapsiblePage
+    CollapsiblePage,
+    DropdownPage
 ];
 
 const FRAGMENTS = [];

@@ -50,6 +50,10 @@ export const MENU = [
                 label: 'Collapsible',
                 url: '/components/collapsible'
             },
+            {
+                label: 'Dropdown',
+                url: '/components/dropdown'
+            },
         ]
     },
     {

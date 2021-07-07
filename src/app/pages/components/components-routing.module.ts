@@ -11,6 +11,7 @@ import { AssignPage } from './assign/assign.page';
 import { BreadcrumbPage } from './breadcrumb/breadcrumb.page';
 import { CardPage } from './card/card.page';
 import { CollapsiblePage } from './collapsible/collapsible.page';
+import { DropdownPage } from './dropdown/dropdown.page';
 
 const PROVIDERS = [];
 
@@ -56,9 +57,13 @@ const routes: Routes = [
                 path: 'collapsible',
                 component: CollapsiblePage
             },
+            {
+                path: 'dropdown',
+                component: DropdownPage
+            },
             // {
-            //     path: 'collpasible',
-            //     component: CollapsiblePage
+            //     path: 'dropdown',
+            //     component: DropdownPage
             // }
         ]
     }
