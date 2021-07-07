@@ -3,8 +3,11 @@
         <ng-container *ngFor="let button of menu">
             <button class="lz-btn-side-nav" (click)="verify(button)" [routerLink]="button.url"
                 routerLinkActive="lz-btn-side-nav--active">
-                <i class="uil" [ngClass]="[button.icon]"></i>
-                {{ button.label }}
+                <div>
+                    <i class="uil" [ngClass]="[button.icon]"></i>
+                    {{ button.label }}
+                </div>
+                <h6 *ngIf="button.badge"><span class="lz-badge lz-badge--news">{{ button.badge }}</span></h6>
             </button>
             <ng-container *ngIf="button.children">
                 <div class="lz-side-nav-container">
