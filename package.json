@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~10.1.5",
     "@angular/router": "~10.1.5",
     "balloon-css": "^1.2.0",
-    "lizard.ui": "file:../lizard.ui",
+    "lizard.ui": "git+ssh://git@github.com/LeoCpii/lizard.ui.git#master",
     "ngx-markdown": "^11.1.3",
     "node-sass": "^4.14.1",
     "rxjs": "~6.6.0",
