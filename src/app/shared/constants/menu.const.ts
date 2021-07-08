@@ -70,6 +70,10 @@ export const MENU = [
                 label: 'Loader',
                 url: '/components/loader'
             },
+            {
+                label: 'Modal',
+                url: '/components/modal'
+            },
         ]
     },
     {

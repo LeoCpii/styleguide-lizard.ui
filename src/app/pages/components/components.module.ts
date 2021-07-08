@@ -20,6 +20,7 @@ import { FilterPage } from './filter/filter.page';
 import { ItemPage } from './item/item.page';
 import { ListPage } from './list/list.page';
 import { LoaderPage } from './loader/loader.page';
+import { ModalPage } from './modal/modal.page';
 
 // FRAGMENT
 
@@ -39,7 +40,8 @@ const PAGES = [
     FilterPage,
     ItemPage,
     ListPage,
-    LoaderPage
+    LoaderPage,
+    ModalPage
 ];
 
 const FRAGMENTS = [];

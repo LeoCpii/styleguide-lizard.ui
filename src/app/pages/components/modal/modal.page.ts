@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
-import { LOADER, LOADER_CENTERING } from './loader.const';
+import { MODAL } from './modal.const';
 
 @Component({
-	selector: 'app-loader-page',
-	templateUrl: './loader.page.html',
-	styleUrls: ['./loader.page.scss'],
+	selector: 'app-modal-page',
+	templateUrl: './modal.page.html',
+	styleUrls: ['./modal.page.scss'],
 	animations: [SLIDE_X_SIMPLE]
 })
 
-export class LoaderPage implements OnInit {
+export class ModalPage implements OnInit {
 	public animate = 'ready';
 	public html = {
-		loader: LOADER,
-		loader_centering: LOADER_CENTERING
+		modal: MODAL,
 	}
 
 	constructor() { }
