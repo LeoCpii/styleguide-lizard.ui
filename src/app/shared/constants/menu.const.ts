@@ -58,6 +58,10 @@ export const MENU = [
                 label: 'Filter',
                 url: '/components/filter'
             },
+            {
+                label: 'Item',
+                url: '/components/item'
+            },
         ]
     },
     {

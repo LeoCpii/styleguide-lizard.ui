@@ -17,6 +17,7 @@ import { CardPage } from './card/card.page';
 import { CollapsiblePage } from './collapsible/collapsible.page';
 import { DropdownPage } from './dropdown/dropdown.page';
 import { FilterPage } from './filter/filter.page';
+import { ItemPage } from './item/item.page';
 
 // FRAGMENT
 
@@ -33,7 +34,8 @@ const PAGES = [
     CardPage,
     CollapsiblePage,
     DropdownPage,
-    FilterPage
+    FilterPage,
+    ItemPage
 ];
 
 const FRAGMENTS = [];
