@@ -17,6 +17,7 @@ import { ItemPage } from './item/item.page';
 import { ListPage } from './list/list.page';
 import { LoaderPage } from './loader/loader.page';
 import { ModalPage } from './modal/modal.page';
+import { TablePage } from './table/table.page';
 
 const PROVIDERS = [];
 
@@ -86,9 +87,13 @@ const routes: Routes = [
                 path: 'modal',
                 component: ModalPage
             },
+            {
+                path: 'table',
+                component: TablePage
+            },
             // {
-            //     path: 'modal',
-            //     component: ModalPage
+            //     path: 'table',
+            //     component: TablePage
             // }
         ]
     }

@@ -21,6 +21,7 @@ import { ItemPage } from './item/item.page';
 import { ListPage } from './list/list.page';
 import { LoaderPage } from './loader/loader.page';
 import { ModalPage } from './modal/modal.page';
+import { TablePage } from './table/table.page';
 
 // FRAGMENT
 
@@ -41,7 +42,8 @@ const PAGES = [
     ItemPage,
     ListPage,
     LoaderPage,
-    ModalPage
+    ModalPage,
+    TablePage
 ];
 
 const FRAGMENTS = [];

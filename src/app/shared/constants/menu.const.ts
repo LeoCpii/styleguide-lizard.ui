@@ -74,6 +74,10 @@ export const MENU = [
                 label: 'Modal',
                 url: '/components/modal'
             },
+            {
+                label: 'Table',
+                url: '/components/table'
+            },
         ]
     },
     {
