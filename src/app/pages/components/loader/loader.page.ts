@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
-import { ITEM, ITEM_DELIMITER } from './item.const';
+import { LOADER } from './loader.const';
 
 @Component({
-	selector: 'app-item-page',
-	templateUrl: './item.page.html',
-	styleUrls: ['./item.page.scss'],
+	selector: 'app-loader-page',
+	templateUrl: './loader.page.html',
+	styleUrls: ['./loader.page.scss'],
 	animations: [SLIDE_X_SIMPLE]
 })
 
-export class ItemPage implements OnInit {
+export class LoaderPage implements OnInit {
 	public animate = 'ready';
 	public html = {
-		item: ITEM,
-		delimiter: ITEM_DELIMITER
+		loader: LOADER
 	}
 
 	constructor() { }

@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
-import { ITEM, ITEM_DELIMITER } from './item.const';
+import { LIST } from './list.const';
 
 @Component({
-	selector: 'app-item-page',
-	templateUrl: './item.page.html',
-	styleUrls: ['./item.page.scss'],
+	selector: 'app-list-page',
+	templateUrl: './list.page.html',
+	styleUrls: ['./list.page.scss'],
 	animations: [SLIDE_X_SIMPLE]
 })
 
-export class ItemPage implements OnInit {
+export class ListPage implements OnInit {
 	public animate = 'ready';
 	public html = {
-		item: ITEM,
-		delimiter: ITEM_DELIMITER
+		item: LIST
 	}
 
 	constructor() { }

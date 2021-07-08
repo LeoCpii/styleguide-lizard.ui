@@ -14,6 +14,8 @@ import { CollapsiblePage } from './collapsible/collapsible.page';
 import { DropdownPage } from './dropdown/dropdown.page';
 import { FilterPage } from './filter/filter.page';
 import { ItemPage } from './item/item.page';
+import { ListPage } from './list/list.page';
+import { LoaderPage } from './loader/loader.page';
 
 const PROVIDERS = [];
 
@@ -71,9 +73,17 @@ const routes: Routes = [
                 path: 'item',
                 component: ItemPage
             },
+            {
+                path: 'list',
+                component: ListPage
+            },
+            {
+                path: 'loader',
+                component: LoaderPage
+            },
             // {
-            //     path: 'item',
-            //     component: ItemPage
+            //     path: 'loader',
+            //     component: LoaderPage
             // }
         ]
     }

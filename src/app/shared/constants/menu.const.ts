@@ -62,6 +62,14 @@ export const MENU = [
                 label: 'Item',
                 url: '/components/item'
             },
+            {
+                label: 'List',
+                url: '/components/list'
+            },
+            {
+                label: 'Loader',
+                url: '/components/loader'
+            },
         ]
     },
     {
