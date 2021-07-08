@@ -12,6 +12,7 @@ import { BreadcrumbPage } from './breadcrumb/breadcrumb.page';
 import { CardPage } from './card/card.page';
 import { CollapsiblePage } from './collapsible/collapsible.page';
 import { DropdownPage } from './dropdown/dropdown.page';
+import { FilterPage } from './filter/filter.page';
 
 const PROVIDERS = [];
 
@@ -61,9 +62,13 @@ const routes: Routes = [
                 path: 'dropdown',
                 component: DropdownPage
             },
+            {
+                path: 'filter',
+                component: FilterPage
+            },
             // {
-            //     path: 'dropdown',
-            //     component: DropdownPage
+            //     path: 'filter',
+            //     component: FilterPage
             // }
         ]
     }

@@ -54,6 +54,10 @@ export const MENU = [
                 label: 'Dropdown',
                 url: '/components/dropdown'
             },
+            {
+                label: 'Filter',
+                url: '/components/filter'
+            },
         ]
     },
     {
