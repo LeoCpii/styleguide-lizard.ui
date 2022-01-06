@@ -1,39 +1,33 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { SLIDE_Y_SIMPLE } from 'src/app/shared/animations/slide.animation';
-import { filter } from 'rxjs/operators';
+import { ITab } from '@/app/shared/components/tabs/tabs.component';
 
 @Component({
-  selector: 'app-components-page',
-  templateUrl: './components.page.html',
-  styleUrls: ['./components.page.scss'],
-  animations: [SLIDE_Y_SIMPLE]
+    selector: 'app-components-page',
+    templateUrl: './components.page.html',
+    styleUrls: ['./components.page.scss'],
+    animations: [SLIDE_Y_SIMPLE]
 })
 export class ComponentsPage implements OnInit {
-  public animate = 'ready';
-  public indexes = [];
+    public animate = 'ready';
+    public tabs: ITab[] = [
+        {
+            label: 'Overview',
+            route: 'overview'
+        },
+        {
+            label: 'API',
+            route: 'api'
+        }
+    ];
 
-  constructor(private router: Router) { }
+    constructor(private router: Router) { }
 
-  private buildIndexes() {
-    console.log(document.getElementById('root'));
-    this.indexes = [];
-    console.log(this.indexes);
-    const section = document.getElementsByTagName('SECTION');
-    for (var i = 0; i < section.length; i++) {
-      this.indexes.push({
-        el: section[i]['dataset'].section,
-        name: section[i]['dataset'].name
-      })
+    public go(tab: ITab): void {
+        const arr = this.router.url.split('/');
+        this.router.navigate(['components',  arr[2], tab.route]);
     }
-    console.log(this.indexes);
 
-    return this.indexes;
-  }
-
-  ngOnInit() {
-    // this.router.events
-    //   .pipe(filter(event => event instanceof NavigationEnd))
-    //   .subscribe(() => this.buildIndexes());
-  }
+    ngOnInit() { }
 }

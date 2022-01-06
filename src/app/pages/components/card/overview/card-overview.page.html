@@ -1,0 +1,27 @@
+<div [@initial]="animate">
+    <section data-section="usage" data-name="Usage">
+        <h3>Usage</h3>
+        <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
+            extras thrown in for more control.</p>
+
+        <div class="lz-card">
+            <div class="lz-card-header"> Header </div>
+            <div class="lz-card-body"> Body </div>
+            <div class="lz-card-footer"> Footer </div>
+        </div>
+        <app-markup [example]="html.card"></app-markup>
+    </section>
+
+    <section data-section="no-padding" data-name="No padding">
+        <h3>No padding</h3>
+        <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
+            extras thrown in for more control.</p>
+
+        <div class="lz-card">
+            <div class="lz-card-header"> Header </div>
+            <div class="lz-card-body lz-card-body--no-padding"> Body </div>
+            <div class="lz-card-footer"> Footer </div>
+        </div>
+        <app-markup [example]="html.card_no_padding"></app-markup>
+    </section>
+</div>

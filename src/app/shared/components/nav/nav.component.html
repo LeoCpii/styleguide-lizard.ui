@@ -1,6 +1,6 @@
 <div class="lz-nav">
     <h6 class="lz-nav-content-left-badge">
-        <span class="lz-badge lz-badge--blue">v{{ version }}</span>
+        <span class="lz-badge lz-badge--info">v{{ version }}</span>
     </h6>
     <div class="lz-nav-content">
         <div class="lz-nav-content-left">
@@ -10,14 +10,23 @@
             </button>
             <div class="lz-nav-content-left-name">
                 <button class="lz-btn lz-btn--icon lz-btn--icon--no-shadow lz-display-small-tablet-hide lz-btn--mr">
-                    <i class="uil uil-store"></i>
+                    <i class="uil uil-brush-alt"></i>
                 </button>
                 <h4>Lizard UI</h4>
             </div>
         </div>
-        <div class="lz-nav-content-right">
-            <button (click)="toggleTheme()" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow lz-btn--mr btn-style">
-                <i class="uil uil-brush-alt"></i>
+        <form class="lz-nav-content-right" [formGroup]="form">
+            <div class="lz-container-field lz-container-field--no-margin" style="margin-right: 10px;">
+                <div class="lz-field">
+                    <select (change)="toggleTheme($event)" formControlName="theme" class="form-select">
+                        <ng-container *ngFor="let theme of themes">
+                            <option [value]="theme">{{ theme | titlecase }}</option>
+                        </ng-container>
+                    </select>
+                </div>
+            </div>
+            <button (click)="toggleMode()" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow lz-display-small-tablet-hide lz-btn--mr">
+                <i class="uil" [ngClass]="icon"></i>
             </button>
             <button class="lz-btn lz-btn--icon lz-btn--icon--no-shadow lz-btn--mr btn-github">
                 <i class="uil uil-github"></i>
@@ -25,7 +34,7 @@
             <button class="lz-btn lz-btn--icon lz-btn--icon--no-shadow btn-twitter">
                 <i class="uil uil-twitter"></i>
             </button>
-        </div>
+        </form>
     </div>
 </div>
 

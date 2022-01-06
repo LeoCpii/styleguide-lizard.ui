@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
+import { SLIDE_Y_SIMPLE } from 'src/app/shared/animations/slide.animation';
 import { CARD, CARD_NO_PADDING } from './card.const';
 
 @Component({
 	selector: 'app-card-page',
 	templateUrl: './card.page.html',
 	styleUrls: ['./card.page.scss'],
-	animations: [SLIDE_X_SIMPLE]
+	animations: [SLIDE_Y_SIMPLE]
 })
 
 export class CardPage implements OnInit {

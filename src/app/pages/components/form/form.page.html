@@ -3,8 +3,8 @@
     <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few extras
         thrown in for more control.</p>
 
-    <section>
-        <h3>Tipos</h3>
+    <section data-section="text" data-name="Text">
+        <h3>Types</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras thrown in for more control.</p>
 
@@ -39,7 +39,7 @@
         <app-markup [example]="html.sizes"></app-markup>
     </section>
 
-    <section>
+    <section data-section="select" data-name="Select">
         <h3>Select</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras thrown in for more control.</p>
@@ -87,7 +87,7 @@
         <app-markup [example]="html.select"></app-markup>
     </section>
 
-    <section>
+    <section data-section="radio" data-name="radio">
         <h3>Radio</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras thrown in for more control.</p>
@@ -95,7 +95,7 @@
         <div class="lz-card">
             <div class="lz-card-body">
                 <div class="lz-container-field-group">
-                    <div class="lz-label">Group</div>
+                    <div class="lz-label">Block</div>
                     <div class="lz-container-field">
                         <div class="lz-radio">
                             <input type="radio" id="group1" name="group" disabled checked>
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <app-markup [example]="html.radio.group"></app-markup>
+        <app-markup [example]="html.radio.block"></app-markup>
 
         <div class="lz-card lz-margin-top">
             <div class="lz-card-body">
@@ -164,7 +164,7 @@
         <app-markup [example]="html.radio.inline"></app-markup>
     </section>
 
-    <section>
+    <section data-section="checkbox" data-name="Checkbox">
         <h3>Checkbox</h3>
         <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
             extras thrown in for more control.</p>
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </div>
-        <app-markup [example]="html.radio.group"></app-markup>
+        <app-markup [example]="html.check.block"></app-markup>
     </section>
 
     <div class="lz-card lz-margin-top">
@@ -238,6 +238,6 @@
                 </div>
             </div>
         </div>
-        <app-markup [example]="html.radio.inline"></app-markup>
+        <app-markup [example]="html.check.inline"></app-markup>
     </div>
 </div>

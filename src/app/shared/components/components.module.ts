@@ -6,11 +6,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { NavComponent } from './nav/nav.component';
 import { MarkupComponent } from './markup/markup.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { CollapsibleComponent } from './collapsible/collapsible.component';
 
 // Modules
 import { RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
-import { CollapsibleComponent } from './collapsible/collapsible.component';
 
 // Services
 import { CollapsibleService } from './collapsible/collapsible.service';
@@ -19,7 +20,8 @@ const COMPONENTS = [
     SideNavComponent,
     NavComponent,
     MarkupComponent,
-    CollapsibleComponent
+    CollapsibleComponent,
+    TabsComponent
 ];
 
 const PROVIDERS = [CollapsibleService];

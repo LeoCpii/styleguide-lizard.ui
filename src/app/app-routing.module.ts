@@ -5,6 +5,7 @@ const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
     { path: 'components', loadChildren: () => import('./pages/components/components.module').then(m => m.ComponentsModule) },
     { path: 'layout', loadChildren: () => import('./pages/layout/layout.module').then(m => m.LayoutModule) },
+    { path: 'pallete', loadChildren: () => import('./pages/pallete/pallete.module').then(m => m.PalleteModule) },
 ];
 
 @NgModule({

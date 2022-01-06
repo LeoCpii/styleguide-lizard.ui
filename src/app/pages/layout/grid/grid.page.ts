@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
+import { SLIDE_Y_SIMPLE } from 'src/app/shared/animations/slide.animation';
 
 @Component({
   selector: 'app-grid-page',
   templateUrl: './grid.page.html',
   styleUrls: ['./grid.page.scss'],
-  animations: [SLIDE_X_SIMPLE]
+  animations: [SLIDE_Y_SIMPLE]
 })
 
 export class GridPage implements OnInit {

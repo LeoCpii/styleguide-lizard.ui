@@ -13,7 +13,12 @@ interface IMenuChildren {
 
 export const MENU = [
     {
-        label: 'Componentes',
+        label: 'Pallete',
+        icon: 'uil-palette',
+        url: '/pallete',
+    },
+    {
+        label: 'Components',
         icon: 'uil-sitemap',
         url: '/components',
         open: false,
@@ -49,6 +54,34 @@ export const MENU = [
             {
                 label: 'Collapsible',
                 url: '/components/collapsible'
+            },
+            {
+                label: 'Dropdown',
+                url: '/components/dropdown'
+            },
+            {
+                label: 'Filter',
+                url: '/components/filter'
+            },
+            {
+                label: 'Item',
+                url: '/components/item'
+            },
+            {
+                label: 'List',
+                url: '/components/list'
+            },
+            {
+                label: 'Loader',
+                url: '/components/loader'
+            },
+            {
+                label: 'Modal',
+                url: '/components/modal'
+            },
+            {
+                label: 'Table',
+                url: '/components/table'
             },
         ]
     },

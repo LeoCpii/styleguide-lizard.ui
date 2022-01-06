@@ -1,32 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
-import { BUTTON_NO_STROKE, BUTTON_OUTLINE, BUTTON_SOLID, BUTTON_SIZE, BUTTON_STATE, BUTTON_ICON } from './button.const';
-
-interface IIndex {
-  el: string;
-  name: string;
-}
+import { SLIDE_Y_SIMPLE } from '@/app/shared/animations/slide.animation';
 
 @Component({
-  selector: 'app-button-page',
-  templateUrl: './button.page.html',
-  styleUrls: ['./button.page.scss'],
-  animations: [SLIDE_X_SIMPLE]
+    selector: 'app-button-page',
+    templateUrl: './button.page.html',
+    styleUrls: ['./button.page.scss'],
+    animations: [SLIDE_Y_SIMPLE]
 })
-
 export class ButtonPage implements OnInit {
-  public animate = 'ready';
-  public indexes: IIndex[] = [];
-  public html = {
-    solid: BUTTON_SOLID,
-    outline: BUTTON_OUTLINE,
-    noStroke: BUTTON_NO_STROKE,
-    size: BUTTON_SIZE,
-    state: BUTTON_STATE,
-    icon: BUTTON_ICON
-  };
+    public animate = 'ready';
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() { }
+    ngOnInit() { }
 }
