@@ -1,0 +1,9 @@
+<div [@initial]="animate">
+    <section data-section="usage" data-name="Usage">
+        <div class="lz-grid lz-grid--gap">
+            <div *ngFor="let prop of props" class="lz-col-10">
+                <div class="box lz-text" [ngClass]="getClass(prop)">{{ prop }}</div>
+            </div>
+        </div>
+    </section>
+</div>

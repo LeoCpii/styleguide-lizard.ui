@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { SLIDE_X_SIMPLE } from 'src/app/shared/animations/slide.animation';
+import { SLIDE_Y_SIMPLE } from 'src/app/shared/animations/slide.animation';
 import { FORM_SELECT, FORM_STATES, INPUT_CHECK_GROUP, INPUT_CHECK_INLINE, INPUT_RADIO_BLOCK, INPUT_RADIO_INLINE } from './form.const';
 
 @Component({
     selector: 'app-form-page',
     templateUrl: './form.page.html',
     styleUrls: ['./form.page.scss'],
-    animations: [SLIDE_X_SIMPLE]
+    animations: [SLIDE_Y_SIMPLE]
 })
 
 export class FormPage implements OnInit {

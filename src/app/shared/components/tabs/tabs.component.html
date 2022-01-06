@@ -1,0 +1,9 @@
+<div class="lz-tabs">
+    <div class="lz-tabs-item" (click)="clickTab($event, item)" *ngFor="let item of tabs" [ngClass]="cls(item)"
+        [id]="item.route">
+        <i *ngIf="item.icon" class="uil" [class]="item.icon" style="margin-right: 5px;"></i>
+        {{item.label}}
+    </div>
+    <div class="lz-tabs-select" #select></div>
+    <div class="lz-tabs-line"></div>
+</div>

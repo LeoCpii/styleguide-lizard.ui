@@ -6,7 +6,7 @@ export const TABLE = `<div class="lz-modal">
             content
         </div>
         <div class="lz-modal-footer">
-            <button type="button" class="lz-btn lz-btn--contrast lz-btn--contrast--no-stroke">Cancel</button>
-            <button type="button" class="lz-btn lz-btn--contrast">Save</button>
+            <button type="button" class="lz-btn lz-btn--accent lz-btn--accent--no-stroke">Cancel</button>
+            <button type="button" class="lz-btn lz-btn--accent">Save</button>
         </div>
 </div>`;

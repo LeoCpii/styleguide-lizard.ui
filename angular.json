@@ -32,7 +32,10 @@
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css",
               "node_modules/katex/dist/katex.min.css",
-              "node_modules/lizard.ui/dist/css/main.css",
+              "node_modules/lizard.ui/dist/theme/default.css",
+              "node_modules/lizard.ui/dist/theme/micrablepharus.css",
+              "node_modules/lizard.ui/dist/theme/vanzosaura.css",
+              "node_modules/lizard.ui/dist/theme/custom.css",
               "src/assets/styles/main.scss"
             ],
             "scripts": [

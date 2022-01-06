@@ -20,7 +20,7 @@ export const FILTER = `<div class="lz-filter">
                 </div>
             </div>
             <div class="lz-display-flex-end">
-                <button type="button" class="lz-btn lz-btn--contrast lz-btn--contrast--no-stroke">Contrast</button>
+                <button type="button" class="lz-btn lz-btn--accent lz-btn--accent--no-stroke">accent</button>
                 <button type="button" class="lz-btn lz-btn--brand">Brand</button>
             </div>
         </div>

@@ -1,24 +1,3 @@
 <div [@initial]="animate">
-    <h1>Collapsible</h1>
-    <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few extras
-        thrown in for more control.</p>
-
-    <section data-section="usage" data-name="Usage">
-        <h3>Usage</h3>
-        <p>Lizard includes several predefined button styles, each serving its own semantic purpose, with a few
-            extras thrown in for more control.</p>
-
-        <div class="lz-collapsible">
-            <div class="lz-collapsible-header">
-                <div>Header</div>
-                <div class="lz-collapsible-header-icon">
-                    <button class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
-                        <i class="uil uil-angle-down"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="lz-collapsible-content">body</div>
-        </div>
-        <app-markup [example]="html.collapsible"></app-markup>
-    </section>
+    <router-outlet></router-outlet>
 </div>

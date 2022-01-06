@@ -25,7 +25,7 @@ export class SideNavComponent implements OnInit {
 
     get sortMenu() {
         MENU.sort((a, b) => a.label > b.label ? 1 : - 1)
-            .forEach(sub => sub.children.sort((a, b) => a.label > b.label ? 1 : - 1));
+            .forEach(sub => sub.children && sub.children.sort((a, b) => a.label > b.label ? 1 : - 1));
         return MENU;
     }
 

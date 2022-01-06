@@ -13,7 +13,12 @@ interface IMenuChildren {
 
 export const MENU = [
     {
-        label: 'Componentes',
+        label: 'Pallete',
+        icon: 'uil-palette',
+        url: '/pallete',
+    },
+    {
+        label: 'Components',
         icon: 'uil-sitemap',
         url: '/components',
         open: false,
